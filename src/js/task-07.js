@@ -3,9 +3,9 @@ const textEl = document.querySelector('#text')
 
 fontSizeRange.value = fontSizeRange.min;
 
-const handelChangeFontSize = (event) => {
+const handleChangeFontSize = (event) => {
     const fontSize = event.currentTarget.value;
     textEl.style.fontSize = `${fontSize}px`;
 };
 
-fontSizeRange.addEventListener('input', handelChangeFontSize)
+fontSizeRange.addEventListener('input', handleChangeFontSize)

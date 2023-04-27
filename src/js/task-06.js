@@ -1,7 +1,7 @@
 const inputEl = document.querySelector('#validation-input');
 
 
-const handelInputCheckValid = (event) => {
+const handleInputCheckValid = (event) => {
     const stringInputLength = inputEl.value.length;
 
     if (stringInputLength >= inputEl.dataset.length) {
@@ -14,4 +14,4 @@ const handelInputCheckValid = (event) => {
     }
 };
 
-inputEl.addEventListener('blur', handelInputCheckValid);
+inputEl.addEventListener('blur', handleInputCheckValid);

@@ -1,7 +1,7 @@
 const inputName = document.querySelector('#name-input');
 const outputName = document.querySelector('#name-output');
 
-const handelInputName = (event) => {
+const handleInputName = (event) => {
     let value = event.currentTarget.value;
 
     if (inputName.value === '') {
@@ -11,4 +11,4 @@ const handelInputName = (event) => {
     outputName.textContent = value;
 };
 
-inputName.addEventListener('input', handelInputName);
+inputName.addEventListener('input', handleInputName);
