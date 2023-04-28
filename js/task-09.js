@@ -3,15 +3,10 @@ const currentColorValue = document.querySelector('.color');
 const btnChangeColor = document.querySelector('.change-color');
 
 const onChangeColor = () => { 
-  // currentColorValue.textContent = getRandomHexColor();
-  // document.body.style.backgroundColor = currentColorValue.textContent;
-  // bodyEl.style.backgroundColor = currentColorValue.textContent;
-
   const color = getRandomHexColor();
 
   currentColorValue.textContent = color;
   bodyEl.style.backgroundColor = color;
-  console.log(bodyEl);
 };
 
 function getRandomHexColor() {

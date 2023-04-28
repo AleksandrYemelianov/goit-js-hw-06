@@ -2,10 +2,9 @@ const inputEl = document.querySelector('#validation-input');
 
 
 const handleInputCheckValid = (event) => {
-    const stringInputLength = inputEl.value.length;
-
-    if (stringInputLength >= inputEl.dataset.length) {
-        console.log(stringInputLength > inputEl.dataset.length);
+    const stringInputLength = inputEl.value.length.toString();
+    
+    if (stringInputLength === inputEl.dataset.length) {
         inputEl.classList.remove('invalid');
         inputEl.classList.add('valid');
     } else {

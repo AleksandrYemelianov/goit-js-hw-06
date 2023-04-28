@@ -13,7 +13,8 @@ const makeIngredientItem = (options) => {
   return options.map((option) => {
 
     const gradientItemEl = document.createElement('li');
-
+    
+    gradientItemEl.classList.add('item');
     gradientItemEl.textContent = option;
     
     return gradientItemEl;
